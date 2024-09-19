@@ -1,13 +1,104 @@
 body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 80vw;
+}
+
+.player {
+  margin-bottom: 20px;
+}
+
+.player input {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 10px;
+  min-width: 150px;
+}
+
+.player-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-bottom: 1px dashed #333;
+  display: inline-block;
+  padding: 5px;
+  min-width: 150px;
+}
+
+.player-name[contenteditable="true"]:focus {
+  border-bottom: 1px solid #000;
+}
+
+.score-controls {
+  margin: 10px 0;
+}
+
+.score-controls button {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+}
+
+.score-controls button:hover {
+  background-color: #ddd;
+}
+
+.score {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.game-controls {
+  margin-top: 20px;
+  display: flex;
+}
+
+
+.game-controls button {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+}
+
+button.green {
+  background-color: #00bb00;
+  color: #000;
+}
+
+button.red {
+  background-color: #ee0000;
+  color: #FFF;
+}
+
+button.blue {
+  background-color: #0000ff;
+  color: #FFF;
+}
+
+.game-controls button:hover {
+  background-color: #ddd;
 }
